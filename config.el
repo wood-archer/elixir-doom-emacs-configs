@@ -48,7 +48,7 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(defun test-vas()
+(defun debug-line()
   (evil-end-of-line)
   (insert " |> IO.inspect"))
 
@@ -71,7 +71,7 @@
       :desc "Sort Lines" :nve  "l"    #'sort-lines
       :desc "iMenu" :nve  "c/"    #'lsp-ui-imenu
       :desc "Toggle Test" :nve  "cT"    #'exunit-toggle-file-and-test
-      :desc "Inspect" :nve  "cI"    #'test-vas)
+      :desc "Inspect" :nve  "cI"    #'debug-line)
 
 (after! lsp-mode
   (dolist (match
