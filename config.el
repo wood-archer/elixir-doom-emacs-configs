@@ -108,3 +108,6 @@
 
 (doom-themes-neotree-config)
 (setq doom-themes-neotree-file-icons t)
+
+(after! lsp-ui
+  (setq lsp-ui-doc-enable t))
