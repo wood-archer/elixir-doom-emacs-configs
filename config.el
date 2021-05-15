@@ -29,6 +29,8 @@
 (setq display-line-numbers-type nil)
 (setq doom-font (font-spec :family "MonacoB2" :size 11 :weight 'bold))
 
+(setq lsp-clients-elixir-server-executable "~/elixir-ls/release/language_server.sh")
+
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
